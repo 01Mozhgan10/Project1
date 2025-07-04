@@ -1,1 +1,36 @@
+package Test1;
+import java.util.Scanner;
+public class Tamrin3 {
+    public static void main(String[]args){
+        Scanner num = new Scanner(System.in);
 
+        System.out.println("Enter a number:");
+        int num1 = num.nextInt();
+        System.out.println("Enter a number2:");
+        int num2 = num.nextInt();
+
+        System.out.println("Please enter an operator (+, -, *, /): ");
+        String operator = num.next();
+
+        switch (operator) {
+            case "+":
+                int result1 = num1 + num2;
+                System.out.println("The addition operator is chosen,resulting in:" + " " + result1);
+                break;
+            case "-":
+                int result2 = num1 - num2;
+                System.out.println("The subtraction operator is chosen, resulting in:" + " " + result2);
+                break;
+            case "*":
+                int result3 = num1 * num2;
+                System.out.println("If the multiplication operator is chosen, the result is:" + " " + result3);
+                break;
+            case "/":
+                float result4 =(float) num1 / num2;
+                System.out.println("The division operator is chosen, resulting in:" + " " + result4);
+                break;
+            default:
+                System.out.println("Invalid operator entered.");
+        }
+    }
+}
