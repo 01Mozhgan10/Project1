@@ -1,5 +1,7 @@
-package Test1;
+برنامه ای بنویسید که 2 عدد و عملگر مورد نظر را از کاربر بگیرد و حاصل آن را نشان دهد؟
+package Test1; 
 import java.util.Scanner;
+
 public class Tamrin3 {
     public static void main(String[]args){
         Scanner num = new Scanner(System.in);
@@ -9,28 +11,28 @@ public class Tamrin3 {
         System.out.println("Enter a number2:");
         int num2 = num.nextInt();
 
-        System.out.println("Please enter an operator (+, -, *, /): ");
-        String operator = num.next();
+        System.out.println("Please enter an operator (+, -, *, /): "); دستور چاپ
+        String operator = num.next();  تعریف متغیر از نوع رشته
 
-        switch (operator) {
-            case "+":
-                int result1 = num1 + num2;
-                System.out.println("The addition operator is chosen,resulting in:" + " " + result1);
-                break;
-            case "-":
-                int result2 = num1 - num2;
-                System.out.println("The subtraction operator is chosen, resulting in:" + " " + result2);
-                break;
-            case "*":
-                int result3 = num1 * num2;
-                System.out.println("If the multiplication operator is chosen, the result is:" + " " + result3);
-                break;
-            case "/":
-                float result4 =(float) num1 / num2;
-                System.out.println("The division operator is chosen, resulting in:" + " " + result4);
-                break;
-            default:
-                System.out.println("Invalid operator entered.");
+        switch (operator) {  استفاده از دستور سوییچ برای بررسی چندین شرایط
+            case "+": اگر کاربر جمع را انتخاب کرد
+                int result1 = num1 + num2;  تعریف متغیر از نوع صحیح و مجموع آن
+                System.out.println("The addition operator is chosen,resulting in:" + " " + result1); دستور چاپ و حاصل
+                break; اگر دستور اجرا شد از برنامه خارج شو
+            case "-": اگر تفریق انتخاب کرد
+                int result2 = num1 - num2;  تعریف متغیر جدید و تفریق آن
+                System.out.println("The subtraction operator is chosen, resulting in:" + " " + result2); دستور چاپ و حاصل
+                break; اگر دستور اجرا شد از برنامه خارج شو
+            case "*": اگر تفریق انتخاب کرد
+                int result3 = num1 * num2; تعریف متغیر جدید و ضرب آن
+                System.out.println("If the multiplication operator is chosen, the result is:" + " " + result3); دستور چاپ و حاصل
+                break; اگر دستور اجرا شد از برنامه خارج شو
+            case "/":  اگر تقسیم انتخاب کرد
+                float result4 =(float) num1 / num2; تعریف متغیر از نوع اعشاری و تقسیم اعداد
+                System.out.println("The division operator is chosen, resulting in:" + " " + result4); دستور چاپ و حاصل
+                break; اگر دستور اجرا شد از برنامه خارج شو
+            default: در صورت عادی
+                System.out.println("Invalid operator entered."); کاربر هر چیزی وارد کرد این دستور چاپ شود
         }
     }
 }
