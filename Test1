@@ -1,6 +1,6 @@
-package Test1;
-public class Tamrin1 {
-    public static void main(String[] args){
-        System.out.print("Hello World");
+package Test1;         ایجاد پکیج  
+public class Tamrin1 {    ایجاد کلاس
+    public static void main(String[] args){   متد اصلی که شروع کننده اجراب برنامه است
+        System.out.print("Hello World");  دستور چاپ
     }
 }
