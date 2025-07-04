@@ -1,3 +1,4 @@
+برنامه ای بنویسید که "سلام دنیا را" چاپ کند؟
 package Test1;         دسته بندی کلاس ها با دستور پکیج 
 public class Tamrin1 {    ایجاد کلاس
     public static void main(String[] args){   متد اصلی که شروع کننده اجرای برنامه است
