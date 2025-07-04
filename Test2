@@ -1,8 +1,5 @@
-//برنامه ای که 2 عدد از کاربر بگیرد و مجموع را به دست آورد؟
 package Test1;
-
 import java.util.Scanner;
-
 public class Tamrin2 {
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
