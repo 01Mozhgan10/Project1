@@ -1,18 +1,26 @@
-برنامه ای بنویسید که 2 عدد از کاربر بگیرد و مجموع آن ها را نشان دهد؟
-package Test1;   دسته بندی کلاس ها
-import java.util.Scanner;  دستور اولیه ای که بتوانیم از کاربر چیزی دریافت کنیم
+//برنامه ای بنویسید که 2 عدد از کاربر بگیرد و مجموع آن ها را نشان دهد؟
 
-public class Tamrin2 {   ایجاد کلاس
-    public static void main(String[] args) {   متد اصلی برای شروع برنامه
-        Scanner num = new Scanner(System.in);   ایجاد یک شی و گرفتن اطلاعات وارد شده توسط کاربر
-
-        System.out.print("Enter the first number: "); دستور چاپ 
-        int num1 = num.nextInt(); تعریف متغیر از نوع صحیح و وارد کردن عدد اول توسط کاربر
-
-        System.out.print("Enter the second number: ");  دستور چاپ
-        int num2 = num.nextInt();  تعریف متغیر از نوع صحیح و وارد کردن عدد دوم توسط کاربر
-
-        int sum = num1 + num2;  تعریف متغیر از نوع صحیح و مجموع 2 عدد
-        System.out.println("Sum of numbers: " + sum);  دستور چاپ حاصل جمع
+//دسته بندی کلاس ها
+package Test1; 
+//دستور اولیه ای که بتوانیم از کاربر چیزی دریافت کنیم
+import java.util.Scanner; 
+//ایجاد کلاس
+public class Tamrin2 { 
+//متد اصلی برای شروع برنامه
+public static void main(String[] args) {   
+//ایجاد یک شی و گرفتن اطلاعات وارد شده توسط کاربر
+Scanner num = new Scanner(System.in);  
+//دستور چاپ
+System.out.print("Enter the first number: ");  
+//تعریف متغیر از نوع صحیح و وارد کردن عدد اول توسط کاربر
+int num1 = num.nextInt();
+//دستور چاپ
+System.out.print("Enter the second number: ");  
+//تعریف متغیر از نوع صحیح و وارد کردن عدد دوم توسط کاربر
+int num2 = num.nextInt();
+//تعریف متغیر از نوع صحیح و مجموع 2 عدد
+int sum = num1 + num2; 
+//دستور چاپ حاصل جمع
+System.out.println("Sum of numbers: " + sum);
     }
 }
